@@ -1,0 +1,1 @@
+console.log("Content script loaded");const container=document.querySelector(".containerrr");if(container){function toggle(){"none"===container.style.display?container.style.display="block":container.style.display="none"}container.style.display="none",chrome.runtime.onMessage.addListener((function(e,n,o){console.log(e.message),"clicked_browser_action"===e.message&&toggle()}))}
