@@ -1,10 +1,11 @@
-import './App.css'
+import MainContainer from "./components/container/mainContainer";
+import Layout from "./components/layout";
 
 function App() {
   return (
-    <div className="extension-app">
-      Hello World
-    </div>
+    <Layout>
+      <MainContainer/>
+    </Layout>
   );
 }
 

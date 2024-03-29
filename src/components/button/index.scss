@@ -1,0 +1,25 @@
+.extension-button-wrapper {
+  height: 96px;
+  width: 70%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: .5px solid #ffffff0d;
+  background: #ffffff14;
+
+  button {
+    height: 72px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    box-shadow: 0px 6px 16px 0px rgba(68, 74, 182, 0.32),
+      0px 1px 2px 0px rgba(68, 74, 182, 0.24), 0px 0px 0px 1px rgb(68, 74, 182);
+    background: #9deee9;
+    color: #125426;
+  }
+}

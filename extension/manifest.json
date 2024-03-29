@@ -4,7 +4,7 @@
   "name": "React Chrome Extension",
   "description": "This is a Chrome extension built with React and TypeScript",
   "action": {
-    "permissions": ["tabs"],
+    "permissions": ["activeTab", "scripting"],
     "default_page": "js/index.html",
     "default_title": "React Chrome Extension"
   },
@@ -17,5 +17,6 @@
   ],
   "background": {
     "service_worker": "js/service-worker.js"
-  }
+  },
+  "host_permissions": ["http://*/*", "https://*/*"]
 }
