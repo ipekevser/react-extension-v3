@@ -5,7 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin")
 module.exports = {
     entry: {
         index: "./src/index.tsx",
-        'service-worker': './background.js',
+        'service-worker': './extension/background.js',
     },
     mode: "production",
     module: {
@@ -34,9 +34,9 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: "manifest.json", to: "../manifest.json" },
+                { from: "extension/manifest.json", to: "../manifest.json" },
                 { from: 'src/App.css', to: '../css/index.css'},
-                { from: 'src/content.js', to: '../js/content.js'},
+                { from: 'extension/content.js', to: '../js/content.js'},
             ],
         }),
         ...getHtmlPlugins(["index"]),
@@ -45,7 +45,7 @@ module.exports = {
         extensions: [".tsx", ".ts", ".js"],
     },
     output: {
-        path: path.join(__dirname, "dist/js"),
+        path: path.join(__dirname, "build/js"),
         filename: "[name].js",
     },
 };

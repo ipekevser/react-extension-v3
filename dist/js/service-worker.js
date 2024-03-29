@@ -1,1 +1,0 @@
-chrome.action?.onClicked?.addListener((function(e){chrome.tabs.query({active:!0,currentWindow:!0},(function(e){var c=e[0];chrome.tabs.sendMessage(c.id,{message:"clicked_browser_action"})}))}));
